@@ -1021,6 +1021,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1925072686}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1043448307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5813738909564240148, guid: ccd4690bdafb3d740b80447adbbc1499,
+    type: 3}
+  m_PrefabInstance: {fileID: 2108700592}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1111474216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 774015823639004007, guid: 871aceff11244c6439dd541ff805d7a0,
@@ -2253,6 +2259,7 @@ Transform:
   - {fileID: 1840096518}
   - {fileID: 468685473}
   - {fileID: 634620517}
+  - {fileID: 1043448307}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1925072686
@@ -2515,7 +2522,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1843685057}
     m_Modifications:
     - target: {fileID: 483861366853625787, guid: ccd4690bdafb3d740b80447adbbc1499,
         type: 3}
@@ -2591,4 +2598,3 @@ SceneRoots:
   - {fileID: 1655704005}
   - {fileID: 1154108418}
   - {fileID: 1843685057}
-  - {fileID: 2108700592}
