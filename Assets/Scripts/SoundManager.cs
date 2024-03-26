@@ -6,7 +6,7 @@ public class SoundManager : MonoBehaviour {
 
     private const string PLAYER_PREFS_SOUND_EFFECTS_VOLUME = "SoundEffectsVolume";
 
-    public static SoundManager Instace { get; private set; }
+    public static SoundManager Instance { get; private set; }
 
     [SerializeField] private AudioClipRefsSO audioClipRefsSO;
 
@@ -22,7 +22,7 @@ public class SoundManager : MonoBehaviour {
     }
 
     private void Awake() {
-        Instace = this;
+        Instance = this;
 
        volume = PlayerPrefs.GetFloat(PLAYER_PREFS_SOUND_EFFECTS_VOLUME, 1f);
     }
@@ -66,6 +66,10 @@ public class SoundManager : MonoBehaviour {
 
     public void PlayFootstepSound(Vector3 position, float volume) {
         PlaySound(audioClipRefsSO.footstep, position, volume);
+    }
+
+    public void PlayCountdownSound() {
+        PlaySound(audioClipRefsSO.warning, Vector3.zero);
     }
 
     public void ChangeVolume() {
